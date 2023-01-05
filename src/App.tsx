@@ -8,7 +8,7 @@ import { Html } from '@react-three/drei';
 
 
 function Model() {
-  const gltf = useLoader(GLTFLoader, "./assets/mug.glb")
+  const gltf = useLoader(GLTFLoader, "./assets/cube.glb")
   gltf.scene.traverse((node : any) => {
     if (node.isMesh) { node.castShadow = true; }
   });
